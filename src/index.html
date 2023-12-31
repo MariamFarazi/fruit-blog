@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fruits Blog Page</title>
+</head>
+
+<body class="font-libreBaskerville text-gray-700">
+
+    <nav class="bg-white shadow-sm xl:px-12 lg:px-0 px-4">
+        <div class="container mx-auto xl:px-4 lg:px-0 py-3 flex items-center">
+            <div class="logo lg:w-40 w-4/12">
+                <a href="#"
+                    class="font-dancingScript text-[#FC4F00] text-4xl hover:text-[#F9690E] transition">fruits<span
+                        class="font-libreBaskerville text-2xl text-[#F9690E]">D</span>rink
+                </a>
+            </div>
+            <div class="xl:ml-12 lg:ml-0 speace-x5 hidden lg:flex font-libreBaskerville">
+                <a href=""
+                    class="flex text-[#FC4F00] items-center font-semibold text-md hover:text-[#F9690E] transition px-5">
+                    <span class="mr-2">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    Home
+                </a>
+                <a href=""
+                    class="flex text-[#FC4F00] items-center font-semibold text-md hover:text-[#F9690E] transition px-5">
+                    <span class="mr-2">
+                        <i class="fas fa-file-alt"></i>
+                    </span>
+                    About
+                </a>
+                <a href=""
+                    class="flex text-[#FC4F00] items-center font-semibold text-md hover:text-[#F9690E] transition px-5">
+                    <span class="mr-2">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    Contact
+                </a>
+            </div>
+            <div class="ml-auto relative hidden lg:block">
+                <span class="absolute text-xl top-1 left-3 text-[#FC4F00]">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" placeholder="search...."
+                    class="block w-full border-none p-2 rounded-3xl pl-11 focus:outline-none bg-gry-700 text-sm text-gray-100 shadow-sm">
+            </div>
+            <div class="lg:ml-5 ml-auto">
+                <a href="#" class="flex items-center text-md text-[#FC4F00] hover:text-[#F9690E] transition">
+                    <span class="mr-2">
+                        <div class="fas fa-user"></div>
+                    </span>
+                    Login/Resister
+                </a>
+            </div>
+            <div class="ml-4 block xl:hidden text-xl text-gray-700 hover:text-[#F9690E] transition cursor-pointer"
+                id="open_sidebar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-12 bg-gray-100 min-h-screen">
+        <div class="px-4 flex flex-wrap lg:flex-nowrap">
+            <div class="w-3/12  hidden xl:block">
+                <div class="bg-white shedow-sm rounded-sm p-4">
+                    <h3 class="text-xl font-semibold font-libreBaskerville mb-4">All Type <span
+                            class="text-[#FC4F00]">fruitsDrink</span></h3>
+                    <div class="speace-y-4">
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 hover:text-[#FC4F00] transition uppercase text-sm py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Green-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(12)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Pink-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(15)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Dark-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(5)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Colorfull-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(10)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Milk-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(3)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Fruits-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(7)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Nature-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(0)</span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                            <span class="mr-2">
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                            <span>
+                                Others-Drinks
+                            </span>
+                            <span class="font-normar ml-auto">(13)</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white flex items-center p-6 mt-8 shadow-sm">
+                    <div>
+                        <h3 class="text-xl font-semibold font-libreBaskerville mb-4"><span class="text-[#FC4F00]">Fresh
+                                Drinks</span> are made in our Company----</h3>
+                        <div class="p-2">
+                            <div class="grid grid-cols-2 gap-3 titems-center overflow-hidden">
+                                <img src="../images/gPic1.jpg" alt=""
+                                    class="w-full transform hover:scale-110 transition duration-700 object-cover rounded-sm">
+                                <img src='../images/gPic2.jpg' alt=''
+                                    class="w-full transform hover:scale-110 transition duration-700 object-cover rounded-sm">
+                                <img src='../images/gPic4.jpg' alt=''
+                                    class="w-full transform hover:scale-110 transition duration-700 object-cover rounded-sm">
+                                <img src='../images/gPic3.jpg' alt=''
+                                    class="w-full transform hover:scale-110 transition duration-700 object-cover rounded-sm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-6/12 lg:w-8/12 w-full lg:mx-6">
+                <div class="flex justify-between bg-white px-3 py-2 items-center rpunded-sm mb-4">
+                    <h5 class="text-base uppercase text-semibold">business</h5>
+                    <a href=""
+                        class="text-white bg-[#FC4F00] uppercase rounded-sm text-sm px-3 py-2 hover:bg-transparent hover:text-[#FC4F00] transition border border-[#FC4F00]">see
+                        more</a>
+                </div>
+                <div class="bg-white shedow-sm rounded-sm">
+                    <a href="#" class="overflow-hidden block">
+                        <img src="../images/bennar2.jpg" alt=""
+                            class="w-full rounded-md object-cover transform hover:scale-110 transition duration-700">
+                    </a>
+                    <div class="lolo text-center pt-2">
+                        <a href="#"
+                            class="font-dancingScript text-[#FC4F00] text-4xl hover:text-[#F9690E] transition">fruits<span
+                                class="font-libreBaskerville text-2xl text-[#F9690E]">D</span>rink
+                        </a>
+                    </div>
+                    <div class="p-3">
+                        <a href="#">
+                            <h2
+                                class="lg:text-2xl text-1xl font-semibold text-gray-700 hover:text-[#FC4F00] transition py-2 text-center">
+                                Lorem ipsum dolor sit amet
+                                consectetur elit. It was there are sapiente adipisci deleniti reprehenderit.
+                            </h2>
+                        </a>
+                        <p class=" text-gray-500 mt-1 text-sm pb-4 text-center">Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Inventore consequatur
+                            exercitationem commodi illum, nostrum maiores, aspernatur aut, assumenda natus cupiditate
+                            quidem doloremque officia tempora id autem voluptatibus assumenda natus cupiditate
+                            quidem doloremque harum.....</p>
+                        <div class="flex mt-3 space-x-5 pb-3 justify-between">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="mr-2 text-x5">
+                                    <i class="far fa-user"></i>
+                                    fruitsDrink Tips
+                                </span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm text-gray-400">
+                                <span class="mr-2 text-x5">
+                                    <i class="far fa-clock"></i>
+                                </span>
+                                December 30, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+                    <div class="bg-white shadow-sm rounded-sm p-4">
+                        <a href="#" class="overflow-hidden block">
+                            <img src="../images/pic5.jpg" alt=""
+                                class="w-full rounded-md h-80 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-xl font-semibold font-roboto text-gray-700 hover:text-[#FC4F00] transition">
+                                    Lorem ipsum dolor sit amet at the consectetur elit, It adipisci.
+                                </h2>
+                            </a>
+                            <div class="flex mt-3 space-x-5">
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-user"></i>
+                                        Bloging Tips
+                                    </span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 12, 2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm rounded-sm p-4">
+                        <a href="#" class="overflow-hidden block">
+                            <img src="../images/pic2.jpg" alt=""
+                                class="w-full rounded-md h-80 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-xl font-semibold font-roboto text-gray-700 hover:text-[#FC4F00] transition">
+                                    Lorem ipsum dolor sit amet at the consectetur elit, It adipisci.
+                                </h2>
+                            </a>
+                            <div class="flex mt-3 space-x-5">
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-user"></i>
+                                        Bloging Tips
+                                    </span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 12, 2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm rounded-sm p-4">
+                        <a href="#" class="overflow-hidden block">
+                            <img src="../images/pic6.jpg" alt=""
+                                class="w-full rounded-md h-80 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-xl font-semibold font-roboto text-gray-700 hover:text-[#FC4F00] transition">
+                                    Lorem ipsum dolor sit amet at the consectetur elit, It adipisci.
+                                </h2>
+                            </a>
+                            <div class="flex mt-3 space-x-5">
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-user"></i>
+                                        Bloging Tips
+                                    </span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 12, 2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm rounded-sm p-4">
+                        <a href="#" class="overflow-hidden block">
+                            <img src="../images/pic4.jpg" alt=""
+                                class="w-full rounded-md h-80 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-xl font-semibold font-roboto text-gray-700 hover:text-[#FC4F00] transition">
+                                    Lorem ipsum dolor sit amet at the consectetur elit, It adipisci.
+                                </h2>
+                            </a>
+                            <div class="flex mt-3 space-x-5">
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-user"></i>
+                                        Bloging Tips
+                                    </span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span class="mr-2 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 12, 2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="xl:w-3/12 lg:w-4/12 w-full mt-8 lg:mt-0">
+                <div class="bg-white shedow-sm rounded-sm p-4">
+                    <div class="grid grid-flow-col overflow-hidden">
+                        <img src="../images/man2.jpg" alt=""
+                            class="w-full rounded-sm transform hover:scale-110 transition duration-500">
+                        <img src="../images/man1.jpg" alt=""
+                            class="w-full rounded-sm transform hover:scale-110 transition duration-500">
+                        <img src="../images/man3.jpg" alt=""
+                            class="w-full rounded-sm transform hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl text-center lg:text-left text-semibold mb-4 mt-4">Social Contact us</h3>
+                    <div class="flex gap-2 ml-[82px] lg:ml-0">
+                        <a href="#"
+                            class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shedow-sm rounded-sm p-4 mt-8">
+                    <h3 class="text-xl text-semibold font-roboto mb-4">Popular Posts</h3>
+                    <div class="space-y-6">
+                        <a href="#" class="flex group">
+                            <div class="flex-shrink-0">
+                                <img src="../images/img1l.jpg" alt="" class="w-20 h-14 rounded object-cover">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h5 class="text-sm  lending-5 font-semibold group-hover:text-[#FC4F00] transion">
+                                    Team Bitbose gread up to attend blockchine
+                                </h5>
+                                <div class="text-gray-500 text-sm items-center">
+                                    <span class="mr-1 text-sm">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 11 2021
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="flex group">
+                            <div class="flex-shrink-0">
+                                <img src="../images/img2.jpg" alt="" class="w-20 h-14 rounded object-cover">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h5
+                                    class="text-md lending-5 font-roboto font-semibold group-hover:text-[#FC4F00] transion">
+                                    Team Bitbose gread up to attend blockchine
+                                </h5>
+                                <div class="text-gray-500 text-sm items-center">
+                                    <span class="mr-1 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 11 2021
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="flex group">
+                            <div class="flex-shrink-0">
+                                <img src="../images/img3.jpg" alt="" class="w-20 h-14 rounded object-cover">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h5
+                                    class="text-md lending-5 font-roboto font-semibold group-hover:text-[#FC4F00] transion">
+                                    Team Bitbose gread up to attend blockchine
+                                </h5>
+                                <div class="text-gray-500 text-sm items-center">
+                                    <span class="mr-1 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 11 2021
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="flex group">
+                            <div class="flex-shrink-0">
+                                <img src="../images/img6l.jpg" alt="" class="w-20 h-14 rounded object-cover">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h5
+                                    class="text-md lending-5 font-roboto font-semibold group-hover:text-[#FC4F00] transion">
+                                    Team Bitbose gread up to attend blockchine
+                                </h5>
+                                <div class="text-gray-500 text-sm items-center">
+                                    <span class="mr-1 text-x5">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    June 11 2021
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shedow-sm rounded-sm p-4 mt-8">
+                    <div class="lolo text-center pt-2">
+                        <a href="#"
+                            class="font-dancingScript text-[#FC4F00] text-4xl hover:text-[#F9690E] transition">...../fruits<span
+                                class="font-libreBaskerville text-2xl text-[#F9690E]">D</span>rink/.......
+                        </a>
+                    </div>
+                    <h3 class="text-xl font-semibold font-libreBaskerville mb-4">Where are in our Company Place.....
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Bangladesh</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Singapure</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Chin</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Uk</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Japan</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Englant</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Thailand</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Nepal</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">Canada</a>
+                        <a href="#"
+                            class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-[#FC4F00] hover:text-white transition">USA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 bg-white border-t">
+        <p class="text-sm text-center">
+            Copyright © 2023 <span class="font-semibol">Programing Kit</span> All Rights Reserved <a href="#"
+                class="font-dancingScript text-[#FC4F00] text-3xl hover:text-[#F9690E] transition">fruits<span
+                    class="font-libreBaskerville text-2xl text-[#F9690E]">D</span>rink
+            </a>
+        </p>
+    </footer>
+
+
+    <!-- sidebar start -->
+    <div class="fixed w-full h-full bg-black left-0 top-0 z-10 xl-hidden bg-opacity-25 opacity-0 invisible transition-all duration-700"
+        id="side-Wrapper">
+        <div class="fixed w-72 h-full top-0 bg-white shadow-md z-10 flex flex-col p-4" id="side">
+            <div class="relative mb-3">
+                <span class="absolute left-3 top-2  text-sm text-gary-500">
+                    <div class="fas fa-search"></div>
+                </span>
+                <input type="text" placeholder="search...."
+                    class="block w-full border-none p-2 rounded-3xl pl-11 focus:outline-none bg-gry-700 text-sm text-gray-100 shadow-sm">
+            </div>
+            <h3 class="text-xl font-semibold font-roboto mb-4">Menu</h3>
+            <div class="flex flex-col space-y-2 mb-4">
+                <a href="" class="flex items-center font-semibold hover:text-[#FC4F00] transition">
+                    <span class="mr-2">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    Home
+                </a>
+                <a href="" class="flex items-center font-semibold hover:text-[#FC4F00] transition">
+                    <span class="mr-2">
+                        <i class="fas fa-file-alt"></i>
+                    </span>
+                    About
+                </a>
+                <a href="" class="flex items-center font-semibold hover:text-[#FC4F00] transition">
+                    <span class="mr-2">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    Contact
+                </a>
+            </div>
+            <h3 class="text-xl font-semibold font-libreBaskerville mb-4">All Type <span
+                    class="text-[#FC4F00]">fruitsDrink</span></h3>
+            <div class="speace-y-4">
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 hover:text-[#FC4F00] transition uppercase text-sm py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Green-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(12)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Pink-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(15)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Dark-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(5)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Colorfull-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(10)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Milk-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(3)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Fruits-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(7)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Nature-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(0)</span>
+                </a>
+                <a href="#"
+                    class="flex items-center font-semibold lending-4 uppercase text-sm hover:text-[#FC4F00] transition py-1">
+                    <span class="mr-2">
+                        <i class="far fa-folder-open"></i>
+                    </span>
+                    <span>
+                        Others-Drinks
+                    </span>
+                    <span class="font-normar ml-auto">(13)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#open_sidebar').addEventListener('click', function () {
+            document.querySelector('#side-Wrapper').classList.remove('opacity-0')
+            document.querySelector('#side-Wrapper').classList.remove('invisible')
+        })
+
+        document.body.addEventListener('click', function (e) {
+            if (e.target.id === 'side-Wrapper') {
+                document.querySelector('#side-Wrapper').classList.add('opacity-0')
+                document.querySelector('#side-Wrapper').classList.add('invisible')
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
